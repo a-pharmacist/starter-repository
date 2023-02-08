@@ -1,0 +1,723 @@
+<!--
+    Comentário
+-->
+
+<div>
+    <h1>
+        O Título
+    </h1>
+</div>
+
+<div>
+    Parágrafo
+</div>
+
+<div>
+    <input type="text">
+</div>
+<div>
+    <input type="text" disabled>
+</div>
+<!--
+    Um tag HTML é constituída de alguns elementos: abertura, fechamento e conteúdo.
+    Essa tríade pode ser chamada de ELEMENTO HTML.
+    Existem, no entanto, elementos vazios, como img e input, em que não há fechamento.
+    Os atributos, por outro lado, são informações extras, configurações. 
+    Atributos boleanos não necessitam de conteúdo.
+-->
+<!--
+    As aspas podem ser: omitidas, duplas ou simples. 
+    Usar aspas duplas é uma boa prática.
+-->
+<!--
+    Os atributos globais mais utilizados: 
+    1. class
+    2. contenteditable
+    3. data-*
+    4. hidden
+    5. id
+    6. style
+    7. tabindex
+    8. title
+-->
+<div class="carrinho" contenteditable="True">
+    
+    Parágrafo editável
+    <!--
+        class é usualmente utilizado para CSS
+    -->
+</div>
+<div class="carrinho" data-qualquer-nome-aqui="">
+<!--
+    data-* pode vir seguido de qualquer coisa, mas não deve ser separado por espaços, de modo que tudo deve ser escrito junto ou com "-".
+-->
+Parágrafo
+</div>
+<div class="carrinho" hidden>
+    Parágrafo oculto/escondido
+</div>
+<div class="carrinho" data-id="" id="0001" style="color: mediumvioletred">
+    Parágrafo rosa
+</div>
+    <!--
+        Usualmente utilizamos CSS fora do HTML
+    -->
+<div title="É o que aparece ao repousar o mouse em cima">
+    Repouse o mouse aqui
+</div>
+
+<p>
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes">Clique aqui e acesse a documentação com os atributos globais HTML.
+    </a>
+</p>
+
+<!--
+    Agora nós vamos falar sobre hierarquia!
+-->
+
+<div>
+    <p>
+        <!--
+        Vamos enfatizar uma coisa, observe só!
+        -->
+        A palavra <em> &quot;amor&quot;</em> está em itálico!
+    </p>
+</div>
+
+<div>
+    <!--
+        Agora nós vamos utilizar a tag <br>, responsável por realizar a quebra de linha.
+    
+    -->
+    <p>
+        Aqui é um linha, <br> Wow, mágica! Outra linha.
+    </p>
+    <!--
+        <br> é uma tag interessante, porque funciona nas formas <br>,</br>,<br/> e é uma tag que não possui fechamento.
+    -->
+</div>
+
+<!--
+    No exemplo acima, a tag <em></em> é filha da tag <p></p>, que é a tag pai.
+    A tag <p></p>, por sua vez, é filha da tag <div></div>, que é a tag pai. 
+-->
+
+<div>
+    O Iago é lindo
+</div>
+<div style="color: palevioletred;">
+    O Iago é lindo, agora em rosa
+</div>
+
+<div>
+    <p Style="color: blueviolet;">
+        Isso é roxo
+    </p>
+    Agora isso é preto
+</div>
+
+<!--
+    Primeiro desafio! Escrever dois parágrafos destacando algumas palavras com as tags em e strong. Inserir um link de saiba mais!
+-->
+
+<div>
+    <p>
+        Poxa, <strong>programação</strong> é tão <b>legal</b>! Eu estou simplesmente <em>encantada</em>.
+    </p>
+    <p>
+        Você quer saber mais sobre esse universo? Simples, dê um <a href="https://www.google.com/">Google</a> sobre isso.
+    </p>
+</div>
+
+<p>
+    Todos os espaços que colocamos
+
+    além das quebras de linha
+
+    são ignorados.
+</p>
+
+<p>
+    Com as tags br nbsp 
+
+    <br> agora as quebras de linha e
+
+    <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; os espaços não são mais ignorados
+</p>
+
+<!--
+    Os caracteres reservados do HTML são "<", ">", "", &, por exemplo.
+    Para que possam aparecer no texto de forma proposital, devem ser escritos de outra maneira: 
+
+    < = &lt;
+    > = &gt;
+    & = &amp;
+    "" = &quot; Texto &quot;
+    '' = &apos;
+-->
+
+<p>
+    &lt; <br>
+    &gt; <br>
+    &amp; <br>
+    &quot;Oi&quot; <br>
+    &apos;Olá&apos;
+</p>
+
+<!--
+    Anatomia do documento HTML
+-->
+
+
+<!DOCTYPE HTML>
+<!--
+    A especificação acima serve para alguns navegadores identificarem que estamos trabalhando com arquivo html 5. 
+
+    Ao escrever um "!" e dar enter, o VSCode já completa com toda a anatomia do documento que deve ser utilizada. 
+-->  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A manu é maravilhosa</title>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>
+        Parágrafo 1
+    </p>
+    <p>
+        Parágrafo 2
+    </p>
+</body>
+</html>
+
+<!--
+    Cabeçalhos e parágrafos
+    h1: geramente utilizamos um por página. Se precisarmos usar mais de 1, possivelmente estaríamos falando de mais de uma página.
+    Geralmente também não é necessário o uso de mais de 3 tipos de h por página. 
+-->
+
+<h1>Sobre mim</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis mollitia tempore temporibus, pariatur nulla magnam odio aliquam est inventore odit porro animi adipisci dolore exercitationem voluptatum nesciunt vitae? Quod, beatae.
+
+<h2>Nascimento</h2>
+
+<h3> Infância</h3>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quam porro, molestias, esse nobis nisi dolore dicta totam natus quia doloremque. Accusantium, blanditiis dolore vero reiciendis iusto unde minus ab.
+
+<h3>Adolescência</h3>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, eaque tempora voluptate adipisci soluta provident neque consequuntur totam cum veniam beatae assumenda, iusto magni sequi obcaecati voluptatum sunt nihil libero.
+
+<h2>Trabalho</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus ea eum eos amet facilis enim rem consectetur culpa perspiciatis sint repudiandae dicta labore id, tempora sapiente mollitia, dolorem quos?
+<a href="">Saiba mais</a>
+
+<!--
+    Listas
+    As listas podem ser ordenadas ou não ordenadas. 
+
+    li*n, de modo que n = qtde de itens da lista.
+-->
+
+<h1>Suco detox</h1>
+<h2>Ingredientes:</h2>
+<ul>
+    <li>Ingrediente 1</li>
+    <li>Ingrediente 2</li>
+    <li>Ingrediente 3</li>
+    <li>Ingrediente 4</li>
+    <li>Ingrediente 5</li>
+    <li>Ingrediente 6</li>
+</ul>
+
+<!--
+    A lista acima é uma lista não ordenada.
+-->
+
+<h1>Suco detox</h1>
+<h2>Ingredientes:</h2>
+<ol>
+    <li>Ingrediente 1</li>
+    <li>Ingrediente 2</li>
+    <li>Ingrediente 3</li>
+    <li>Ingrediente 4</li>
+    <li>Ingrediente 5</li>
+    <li>Ingrediente 6</li>
+</ol>
+
+<!--
+    A lista acima é uma lista ordenada.
+-->
+
+<!--
+    Citações
+
+    <blockquote>
+    <cite>
+    <q>
+-->
+
+<div>
+    <blockquote cite="URL vem aqui">
+        <p>
+            O <b>elemento HTML <code>&lt;blockquote&gt;</code></b> (ou <em>HTML Block Quotation Element</em>) significa que um texto externo foi citado.
+        </p>
+    </blockquote>
+</div>
+
+<p>
+    De acordo com <a href="URL vem aqui">
+        <cite>página MDN blockquote:</cite>
+    </a>
+</p>
+
+<p>
+    O elemento quote - <code>&lt;q&gt;</code> - é <q cite="URL vem aqui">usado para citações curtas que não precisam de parágrafos ou quebras de linha</q> -- <a href=""><cite>MDN q page.</cite></a>
+</p>
+
+<!--
+    Abreviações
+    <abbr>
+-->
+
+<p>
+    Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web.
+</p>
+
+<!--
+    Detalhes de contato
+    <adress>
+-->
+
+<address>
+    <p>
+        Gabriella Campera <br>
+        <strong>Contagem, MG</strong>
+    </p>
+</address>
+
+<!--
+    Listas de descrição
+    <dl>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+-->
+
+<h2>Glossário</h2>
+<dl>
+    <dt>Hypertext</dt>
+    <dd>É um hypertexto com possibilidades...</dd>
+
+    <dt>Markup</dt>
+    <dd>Marcação do texto...</dd>
+
+    <dt>Language</dt>
+    <dd>Linguagem com sua semântica e sintaxe...</dd>
+</dl>
+
+<!--
+    Representando códigos de computador
+
+    <code> 
+        Partes genéricas de código
+
+    <pre>
+        Blocos de código, pois essa tag mantém os espaços em branco e recuos que eu colocar no meu código
+-->
+
+<pre>
+<code>
+    document
+        .querySelector("body")
+</code>
+</pre>
+
+<!--
+    Elementos genéricos
+
+    <div> -- trabalha com a ideia de blocos
+    <span> -- trabalha com a ideia de linhas
+-->
+
+<div style="color:magenta;">
+    Um texto qualquer
+</div>
+
+<p>
+    <span style="color:yellowgreen; font-size: large;">Outro</span> texto
+</p>
+
+<p style="color:blue;">
+    Um texto qualquer
+</p>
+
+<!--
+    Hyperlinks - Elemento âncora: <a>
+
+    + Anatomia
+
+    + Atributos
+        - Globais (title, id, class, etc.)
+        - href
+            - para onde iremos quando clicamos no link?
+                - url completa
+                - fragmento
+                - email
+                - telefone
+                - e outros.
+        - download
+        - target -> abre outra guia no navegador
+            - _self (padrão)
+            - _blank
+-->
+
+<a href="" do></a> <!-- Anatomia -->
+<a href="" download=""></a>
+<a href="" target=""></a>
+
+<p>Encontre-me</p>
+
+<ul>
+    <li><a href="https://www.rocketseat.com.br/" target="_blank">Website</a></li>
+    <li><a href="mailto:gabriellacampera@gmail.com">Email</a></li>
+    <li><a href="tel:+5531995701895">Telefone</a></li>
+</ul>
+
+<p>Saiba mais</p>
+
+<ul>
+    <li><a href="#about">Sobre mim</a></li> <!-- Exemplo de fragmento -->
+    <li><a href="#history">História</a></li>
+    <li><a href="#works">Trabalhos</a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus distinctio iure dolorum ut earum aliquid, veniam ducimus recusandae rerum eos consequuntur facere voluptas quod ipsam ad maxime quos. Molestias, sint!</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo delectus ab vero soluta perferendis. Fuga rerum quia unde mollitia cupiditate laborum qui rem nihil delectus libero! Deserunt officiis aperiam saepe.</p>
+
+<h2 id="history">História</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus distinctio iure dolorum ut earum aliquid, veniam ducimus recusandae rerum eos consequuntur facere voluptas quod ipsam ad maxime quos. Molestias, sint!</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo delectus ab vero soluta perferendis. Fuga rerum quia unde mollitia cupiditate laborum qui rem nihil delectus libero! Deserunt officiis aperiam saepe.</p>
+
+<h2 id="works">Trabalhos</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus distinctio iure dolorum ut earum aliquid, veniam ducimus recusandae rerum eos consequuntur facere voluptas quod ipsam ad maxime quos. Molestias, sint!</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo delectus ab vero soluta perferendis. Fuga rerum quia unde mollitia cupiditate laborum qui rem nihil delectus libero! Deserunt officiis aperiam saepe.</p>
+
+<!--
+    Conteúdo de hyperlinks:
+
+    - qualquer conteúdo
+-->
+
+<a href="http://google.com.br" title="Ir para o Google">
+    <h1>Google</h1>
+    <p>Qualquer coisa aqui, até uma <em><b>BIG</b></em> imagem</p>
+    <img src="" alt="">
+</a> <!-- O atributo global title não é útil para dispositivos touchscreen -->
+
+<!--
+    URLs e Caminhos dos arquivos
+
+- Uniform Resource Locator
+    - https://rocketseat.com.br
+    - Sequência de texto que define onde algo está localizado na web
+- URLs usam caminhos para encontrar arquivos
+
+- Caminhos dos arquivos
+    - Onde, no explorador de arquivos, um recurso está localizado
+-->
+
+<p>
+    <a href="testetab.html#teste">Teste busca de caminhos da pasta</a>
+</p>
+
+<!--
+    Como navegar pelos caminhos?
+
+    - mesmo diretório -- mesma pasta 
+    - entrando em diretórios
+    - saindo de diretórios
+    - diretório raiz (root ou pai) -- arquivo na mesma pasta
+-->
+
+<p>
+    <a href="testetab.html">Arquivo na mesma pasta</a> <!-- Diretório raiz, mesma pasta -->
+</p>
+
+<p>
+    <a href="outros_teste_diretorios/teste_diretorios.html">Arquivo em outra pasta</a> <!-- É necessário acessar o arquivo fora da pasta, mas não é preciso deixar a pasta atual -->
+</p>
+
+<p>
+    <a href="./testetab.html"></a> <!-- É outra forma de referenciar arquivos na mesma pasta -->
+</p>
+
+
+<p>
+    <a href="../outros_teste_diretorios/teste_diretorios.html">Outro diretório</a> <!-- É necessário acessar o arquivo fora da pasta, mas é preciso deixar a pasta atual -->
+</p>
+
+<!--
+    URLs absolutos vs relativos
+
+    - Absolutos
+        - inclui protocolo e o nome do domínio
+            - https://www.rocketseat.com.br/projeto/index.html
+        - sempre apontará para o mesmo local, pois é absoluto
+
+    - Relativos
+        - relativo à página aberta no momento
+        - apontará para lugares diferentes
+-->
+
+<p>
+    <a href="google.com.br">Relativo: ir para o google</a> <br> <!-- Relativo à pasta atual-->
+    <a href="https://google.com.br">Absoluto: ir para o google</a>
+</p>
+
+<!--
+    <table>
+    
+    Prós
+        - Visualização de dados via linhas e colunas
+        - Boa acessibilidade para leitura dos dados
+    
+    Contras
+        - Pouco flexível
+        - Precisa de estilização para melhor visualização
+
+    Não usar
+        - Para criar seu layout
+-->
+
+<!--
+    Criando uma tabela simples
+-->
+
+<table>
+
+    <caption>Pessoas na casa</caption>
+
+    <colgroup>
+        <col style="background-color: pink;">
+        <col style="background-color: yellowgreen;">
+        <col style="background-color: aquamarine;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Posição</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Jean</td>
+            <td>47</td>
+            <td>Pai</td>
+        </tr>
+
+       <tr>
+            <td>Viviane</td>
+            <td>45</td>
+            <td>Mãe</td>
+       </tr>
+
+       <tr>
+            <td>Gabi</td>
+            <td>23</td>
+            <td>Filha mais velha</td>
+       </tr>
+
+       <tr>
+            <td>Manu</td>
+            <td>7</td>
+            <td>Filha mais nova</td>
+       </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>4 pessoas</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<!--
+    Criando uma tabela complexa
+
+    2 lojas
+        Quantos produtos foram produzidos e vendidos para cada loja, agrupados pelo nome dos produtos.
+-->
+<br>
+
+<table>
+
+<caption>Produzidos X Vendidos por Loja</caption>
+
+<!-- A tag colgroup auxilia na estilização de tabelas -->
+
+<colgroup>
+    <col>
+    <col span="2" style="background-color: crimson;">
+    <col span="2" style="background-color: darkgoldenrod;">
+</colgroup>
+
+<thead>
+
+<!-- O atributo "scope" auxilia na acessibilidade de tabelas, ao passo que define o que foi realizado em cada célula do cabeçalho, atribuindo a elas a caratecrística de linhas, colunas ou agrupamentos de linhas ou colunas -->
+
+    <tr>
+        <th rowspan="2"></th>
+        <th colspan="2" scope="colgroup">Afonso Pena</th>
+        <th colspan="2" scope="colgroup">Antônia Pereira</th>
+    </tr>
+
+    <tr>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+        <th scope="col">Produzidos</th>
+        <th scope="col">Vendidos</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <th scope="row">Vassouras</th>
+        <td>50</td>
+        <td>30</td>
+        <td>20</td>
+        <td>20</td>
+    </tr>
+
+    <tr>
+        <th scope="row">Baldes</th>
+        <td>10</td>
+        <td>10</td>
+        <td>30</td>
+        <td>25</td>
+    </tr>
+</tbody>
+
+</table>
+
+<!--
+    Head
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<!--
+    <meta> -- metadados
+
+    atributos
+    - charset
+    - name
+    - content
+-->
+
+<head>
+    <!-- Codificação de caracteres especiais-->
+    <meta charset="UTF-8">
+
+    <!-- Portabilidade para dispositivos mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- name: nome da tag meta; content: conteúdo da tag meta -->
+    
+</head>
+
+<!-- 
+    <link> para ícones personalizados
+-->
+
+<!-- favicon básico -->
+
+<link rel="stylesheet" href="">
+
+<!-- iPhone não-Retina, iPod Touch e dispositivos Android 2.1+: -->
+<link rel="apple-touch-icon-precomposed" href="https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+
+<!-- iPad de primeira e segunda geração: -->
+<link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<!-- iPhone com tela retina de alta resolução: -->
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<!-- iPad de terceira geração com tela retina de alta resolução: -->
+<link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=cfca599cb367ccaf7377d56ddc7542f5"/>
+
+<!--
+    Atributos da tag <meta> que são importantes para SEO
+        - charset
+        - viewport
+        - author
+        - description -- texto descritivo que aparece na página do google
+        - robots
+-->
+
+<head>
+
+    <!-- SEO: SEARCH ENGINE OPTIMIZATION (motores de busca = google) -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Gabriella Campera">
+    <meta name="description" content="Um website para amantes de tecnologia">
+    <meta name="robots" content="index, follow"> 
+    
+    <!-- Configuração padrão, usamos o atributo "robots" quando desejamos pedir ao robô do Google "noindex" e/ou "nofollow" -->
+
+</head>
+
+<!--
+    <meta> para redes sociais
+-->
+
+<head>
+
+    <!-- Open Graph: Facebook-->
+
+    <meta property="og:image" content="https://cdn-images-1.medium.com/max/92/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg">
+
+    <meta property="og:description" content="Aqui vem um texto para ser mostrado ao compartilhar no facebook">
+
+    <meta property="og:title" content="Um site da Rocketseat">
+
+    <!-- twitter -->
+    
+    <meta name="twitter:title" content="Rocketseat">
+
+</head>
+
