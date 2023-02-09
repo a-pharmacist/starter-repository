@@ -345,17 +345,17 @@ Propriedade e valor que mantêm a largura da caixa de acordo com o tamanho (widt
 
 * Display block: 
 
-* Ocupa toda a linha, colocando o próximo elemento abaixo desse;
-* width e height são respeitados;
-* padding, margin, border irão funcionar normalmente;
-* <p> <div> <section>, todos os headings <h1> <h2>...;
+* Ocupa toda a linha, colocando o próximo elemento abaixo desse
+* width e height são respeitados
+* padding, margin, border irão funcionar normalmente
+* <p> <div> <section>, todos os headings
 
 * Display inline: 
 
-* Os elementos ficam ao lado do outro e não empurram outros elementos para baixo;
-* width e height não funcionam;
-* Somente valores horizontais de margin; 
-* <a> <strong> <span> <em>; 
+* Os elementos ficam ao lado do outro e não empurram outros elementos para baixo
+* width e height não funcionam
+* Somente valores horizontais de margin
+* <a> <span> etc.
 
 ## Margin
 
